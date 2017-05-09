@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>intensivstation - Media Query Demos</title>
+
+<style type="text/css">
+/* html5 + CSS 3 Template created by madam monorom  http://intensivstation.ch 2017 */
+body {
+  background-color: #fff;
+  font-size: 1em;
+  font-family: Arial, SunSans-Regular, Sans-Serif;
+  color:#333;
+}
+pre, code {
+  font-size: 1.3em;
+}
+a {color: #ff6677;}
+a:visited {color:#ff6677;}
+a:hover {color: #564b47;}
+a:active { color:#000000;}
+
+h1, h2 {
+  font-size:1.8em;
+  font-weight: normal;
+  margin: 0 0 20px;
+}
+
+.box {
+  height: 100px;
+  padding: 10px;
+  margin:0 0 3px;
+  background-color: #ddd;
+  border:1px solid #999;
+}
+    .box {
+    background-color: darkgray;
+}
+
+.iphone {
+    display: none;
+}
+
+.screensize span {
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+    .eins {
+        background-color: black;
+        color: white;
+    }
+    span.gr900 {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .zwei {
+        background-color: pink;
+    }
+    span.zw600-900 {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .drei {
+        background-color: aqua;
+    }
+    span.k600 {
+        display: inline-block;
+    }
+}
+
+
+@media screen and (max-device-width: 480px) {
+    .iphone {
+        display: block;
+    }
+}
+
+</style>
+</head>
+
+<body>
+  <header>
+    <a href="http://www.intensivstation.ch"><img src="http://www.intensivstation.ch/assets/Uploads/intensivstation-logo.png" alt="intensivstation.ch" /></a>
+    <p>FREE HTML5 AND CSS3 TEMPLATES / OPEN SOURCE LEARNING</p>
+  </header>
+
+  <h1>Einfaches Media Query Beispiel ohne Viewport Meta-Tag</h1>
+  <div class="box eins">Diese Box wird <strong>schwarz</strong> mit <strong>weisser</strong> Schrift wenn der sichbare Bereich grösser als 900px ist.</div>
+  <div class="box zwei">Diese Box ist <strong>pink</strong> wenn der sichbare Bereich  zwischen 600px und 900px liegt.</div>
+  <div class="box drei">Diese Box wird <strong>aqua</strong> wenn der sichbare Bereich kleiner als 600px ist.</div>
+  <div class="box iphone">Diese Box wird nur auf Geräten mit einer maximalen <strong>Bildschirmgrösse von 480px</strong> angezeigt</div>
+
+  <p class="screensize"><strong>Die Bildschirmgrösse ist zur Zeit:</strong>
+    <span class="k600">kleiner als 600px</span>
+    <span class="zw600-900">zwischen 600 - 900px</span>
+    <span class="gr900">grösser als 900px</span>
+  </p>
+
+</body>
+</html>
