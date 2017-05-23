@@ -1,0 +1,102 @@
+/* html5 + CSS 3 Template created by miss monorom  http://intensivstation.ch 2012 */
+
+/* reset padding and margin */
+* {
+margin: 0;
+padding: 0;
+}
+
+/* render html5 elements as block - - rendert html5 elemente als block  */
+
+header, footer, section, aside, nav, article {
+display: block;
+}
+
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 1em;
+	color: #000;
+	background-color: #FFF;
+	margin:0;
+	padding: 20px 100px;
+}
+
+a {
+color: #dd0000;
+text-decoration: none;
+}
+a:visited {color:#dd0000;}
+a:hover {color: #777;}
+a:active { color:#000000;}
+
+img{border:none;}
+
+h1 {
+font-size: 2em;
+}
+
+h1,h2,h3,h4 {
+font-weight: normal;
+margin:0 0 20px;
+}
+
+p {
+line-height:1.5em;
+margin:0 0 20px;
+}
+
+hr{
+ border: 0px;
+ border-top: solid 1px #000;
+margin:0 0 25px;
+}
+
+article hr{
+ border: 0px;
+ border-top: dotted 1px #000;
+margin:0 0 25px;
+}
+
+/* Meine */
+
+.eins img {
+    border: 2px solid green;
+    padding: 5px;
+}
+
+.eins img:hover {
+    background-color: green;
+}
+
+.eins img[alt='login'], .eins img[alt='logout'] {
+    border-color: red;
+}
+
+.eins img[alt='login']:hover, .eins img[alt='logout']:hover {
+    background-color: red;
+}
+
+.zwei a[href^='http://'] {
+    padding-right: 15px;
+    background: url(/images/icons/external.png) no-repeat right center;
+}
+
+.drei a {
+    padding-left: 20px;
+}
+
+.drei a[href$='pdf'] {
+    background: url(/images/fileicons/pdf.png) no-repeat left center;
+}
+
+.drei a[href$='xlsx'] {
+    background: url(/images/fileicons/xls.png) no-repeat left center;
+}
+
+.drei a[href$='docx'] {
+    background: url(/images/fileicons/doc.png) no-repeat left center;
+}
+
+.drei a[href^='mailto:'] {
+    background: url(/images/fileicons/email.png) no-repeat left center;
+}

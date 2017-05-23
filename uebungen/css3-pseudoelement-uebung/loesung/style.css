@@ -1,0 +1,102 @@
+/* css released under Creative Commons License -  http://creativecommons.org/licenses/by/2.0/deed.en  */
+/* html5 + CSS 3 Template created by miss monorom  http://intensivstation.ch 2014 */
+@import url("font-awesome/css/font-awesome.css");
+
+/* reset padding and margin */
+* {
+margin: 0;
+padding: 0;
+}
+
+/* render html5 elements as block - - rendert html5 elemente als block  */
+header, footer, section, aside, nav, article, main {
+display: block;
+}
+/* basic style */
+
+html{
+	font-size: 100%;
+}
+
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+  color: #000;
+  background-color: #FFF;
+  padding: 20px 100px;
+}
+
+a {
+color: #ff6677;
+text-decoration: none;
+}
+a:visited {color:#ff6677;}
+a:hover {color: #777;}
+a:active { color:#000000;}
+
+img{border:none;}
+
+h1 { font-size: 2em; }
+
+h1,h2,h3,h4 {
+font-weight: normal;
+margin:0 0 20px;
+}
+
+p {
+line-height:1.5em;
+margin:0 0 20px;
+}
+ ul, ol {
+line-height:1.5em;
+margin:0 25px 20px;
+}
+
+article hr, hr{
+ border: 0px;
+ border-top: solid 1px #000;
+ margin:0 0 25px;
+}
+
+/* ----------------------------------------------
+	Style für die BOX
+---------------------------------------------- */
+.box {
+	border: 1px dotted #000;
+	width:50%;
+	position:relative;
+	padding:30px;
+	}
+
+.box:hover { background-color: #eee;}
+
+.box:after {
+	font-family: 'FontAwesome';
+ 	content: "\f1e2";
+	font-size:5rem;
+	position:absolute;
+	color:#333;
+	bottom:-27px;
+	right:-50px;
+}
+
+.box:hover:after {
+    content: "\f135";
+	color:#f67;
+}
+/*
+.box:before {
+  	content: "\f1bb";
+	font-family: 'FontAwesome';
+	font-size:3rem;
+	position:absolute;
+	color:#333;
+	top:-17px;
+	left:-20px;
+}
+
+
+.box:hover:before {
+	color:#f67;
+}
+
+ */

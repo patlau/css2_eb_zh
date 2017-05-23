@@ -1,5 +1,7 @@
 /* html5 + CSS 3 Template created by madam monorom  http://intensivstation.ch 2017 */
 
+@import url("../font-awesome/css/font-awesome.css");
+
 body {
 	background-color: #ccc;
 	font-size: 1em;
@@ -53,7 +55,7 @@ nav ul {
 nav a {
 	display: block;
 	color: #fff;
-	padding: 10px 20px;
+	padding: 10px 20px 10px 30px;
 }
 nav a:visited {
 	color: #fff;
@@ -61,6 +63,42 @@ nav a:visited {
 nav a:hover {
 	background: #f56;
     color: #fff;
+}
+
+nav li {
+    position: relative;
+}
+
+nav li:before {
+    position: absolute;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 1.3em;
+    left: 5px;
+    top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav li:nth-child(1):before {
+    content: '\f015';
+}
+
+nav li:nth-child(2):before {
+    content: '\f135';
+}
+
+nav li:nth-child(3):before {
+    content: '\f129';
+}
+
+nav li:hover:after {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    content: '\f105';
 }
 
 /* ----------------- content--------------------- */
@@ -76,6 +114,19 @@ p {
 ul {
 	line-height: 1.8em;
     padding: 0 0 0 20px;
+}
+
+.col {
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.col:nth-child(2n+1) {
+    border: 1px solid gray;
+}
+
+.col:nth-child(2n) {
+    border: 1px solid red;
 }
 
 /* -------------- side infos ------------- */

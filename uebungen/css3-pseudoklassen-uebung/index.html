@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS3 Pseudoklassen Übung</title>
+<style>
+
+/* html5 + CSS 3 Template created by miss monorom  http://intensivstation.ch 2013 */
+
+/* reset padding and margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* render html5 elements as block - - rendert html5 elemente als block  */
+
+header, footer, section, aside, nav, article {
+display: block;
+}
+
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 1em;
+  color: #000;
+  background-color: #FFF;
+  margin:0;
+  padding: 20px 100px;
+}
+
+a {
+  color: #dd0000;
+  text-decoration: none;
+}
+a:visited {color:#dd0000;}
+a:hover {color: #777;}
+a:active { color:#000000;}
+
+img{border:none;}
+
+h1 {
+  font-size: 2em;
+}
+
+h1,h2,h3,h4 {
+  font-weight: normal;
+  margin:0 0 20px;
+}
+
+p, ul, ol {
+  line-height:1.5em;
+  margin:0 0 20px;
+}
+ol {
+  margin-left:20px;
+}
+
+hr{
+ border: 0px;
+ border-top: solid 1px #000;
+ margin:0 0 25px;
+}
+
+article hr{
+ border: 0px;
+ border-top: dotted 1px #000;
+margin:0 0 25px;
+}
+
+
+/* Meine */
+
+    ul li {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    ul li:empty {
+        border: solid 1px red;
+        padding: 5px;
+    }
+
+    ul li:nth-child(4) {
+        color: red;
+        font-style: italic;
+    }
+
+    ul li {
+        border-right: solid 1px black;
+        padding-right: 5px;
+    }
+
+    ul li:last-child {
+        border-right: none;
+    }
+
+</style>
+</head>
+
+<body>
+  <header>
+  <h1><a href="http://intensivstation.ch"><img src="http://intensivstation.ch/assets/Uploads/intensivstation-logo.png" alt="" border="0" /></a></h1>
+  </header>
+
+  <section id="centent">
+    <article>
+      <h1>CSS3 Pseudoklassen</h1>
+      <p><strong>Aufgabe</strong></p>
+      <ol>
+        <li>Alle Listenpunkte stehen nebeinander.</li>
+        <li>Leere Listenpunkte bekommen einen farbigen <code>border</code>.</li>
+        <li>Das 4. Listenelement soll in einer Farbe und kursiv dargestellt werden.</li>
+        <li>Ausser dem Letzten, bekommen alle  Listenelement einen <code>border-right</code>.</li>
+      </ol>
+
+      <ul>
+        <li>Sommer</li>
+        <li>Sonne</li>
+        <li></li>
+        <li>Strand</li>
+        <li>Schwimmen</li>
+        <li>Segeln</li>
+      </ul>
+
+    </article>
+  </section>
+</body>
+</html>
