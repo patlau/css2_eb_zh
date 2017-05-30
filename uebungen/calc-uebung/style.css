@@ -1,0 +1,88 @@
+/* css released under Creative Commons License -  http://creativecommons.org/licenses/by/2.0/deed.en  */
+/* html5 + CSS 3 Template created by miss monorom  http://intensivstation.ch 2016 */
+
+@import url(http://fonts.googleapis.com/css?family=Rajdhani:300,400|Ubuntu:300,400);
+
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+
+html{
+	font-size:100%;
+	-webkit-text-size-adjust: none;
+	}
+body {
+background:#fff;
+font-size: 1em;
+color:#564b47;
+font-family: 'Ubuntu', sans-serif;
+font-weight: 300;
+}
+
+a { color: #f67;
+text-decoration:none;}
+a:visited {color:#f67;}
+a:hover {color: #f00;}
+a:active { color:#78909C;}
+
+h1{
+font-size:3.5em;
+font-family: 'Rajdhani', sans-serif;
+font-weight: 300;
+}
+ h2 {
+font-size:2.5em;
+font-family: 'Rajdhani', sans-serif;
+font-weight: 300;
+}
+
+h3 {
+font-size:1.3em;
+text-transform:uppercase;
+font-family: 'Rajdhani', sans-serif;
+font-weight: 400;
+}
+
+ul{
+	list-style-type:none;}
+
+/* ----------header -------------- */
+
+header, footer {
+	background: #ddd;
+	padding:20px;
+	}
+/* ----------------- content--------------------- */
+#content{
+	padding:20px;
+	}
+p, ul {
+padding:  0 0 20px;
+line-height:1.8em;
+-moz-hyphens: auto;
+-webkit-hyphens: auto;
+-ms-hyphens: auto;
+-o-hyphens: auto;
+hyphens: auto;
+}
+.col{
+	padding: 10px 0;
+	}
+#content .col:not(:last-child){
+	border-bottom:1px solid #999;
+	}
+/* -----------media queries --------------------------- */
+@media screen and (min-width: 600px) {
+
+}
+
+/* -----------media queries --------------------------- */
+@media screen and (min-width: 960px) {
+
+
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>CSS3 Post-It</title>
+
+<style type="text/css">
+
+    * {
+    box-sizing: border-box;
+    }
+
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 1em;
+    background-color: #ccc;
+    color:#000;
+    padding: 10px;
+    margin: 0;
+    margin-top: 150px;
+}
+
+    .box h2 {
+        color: black;
+        display: none;
+    }
+
+    .box:hover h2 {
+        color: red;
+        display: block;
+    }
+
+    #content {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .box {
+        box-sizing: border-box;
+        width: 250px;
+        height: 250px;
+        padding: 20px;
+        border-radius: 0 15px;
+        background: linear-gradient(to top right, lightyellow, yellow);
+        box-shadow: -5px 5px 5px gray, inset 0 0 20px 0px lightgray;
+    }
+
+    .b1, .b2 {
+        margin-right: 20px;
+    }
+
+
+    .box:hover {
+        border-radius: 15px 0px;
+        background: linear-gradient(to top right, yellow, orange);
+        box-shadow: -5px 5px 10px 5px gray, inset 0px 0px 20px 2px white;
+    }
+
+</style>
+</head>
+
+<body>
+  <section id="content">
+    <div class="box b1"><h2>B1</h2></div>
+    <div class="box b2"><h2>B2</h2></div>
+    <div class="box b3"><h2>B3</h2></div>
+  </section>
+
+</body></html>
