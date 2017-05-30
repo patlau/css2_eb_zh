@@ -128,14 +128,14 @@ ul {
     border: 1px solid red;
 }
 
-#content > section {
+#content > .row {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     margin-right: -10px;
 }
 
-#content > section > div {
+#content > .col {
     box-sizing: border-box;
     margin: 0 10px 10px 0;
     flex-grow: 1;
@@ -167,10 +167,10 @@ footer a {
     body {
         background: rgba(240, 248, 255, 1);
     }
-    #content > section > div:hover {
+    #content > .col:hover {
         background: linear-gradient(rgba(240, 248, 255, 0.5), rgba(255,255,255,0.5) );
     }
-    #content > section > div {
+    #content > .col {
       width: calc(100% / 2 - 10px);
     }
 }
@@ -184,10 +184,10 @@ footer a {
         margin-left: auto;
         margin-right: auto;
     }
-    #content > section > div:hover {
+    #content > .col:hover {
         background: linear-gradient(rgba(255, 228, 196, 0.5), rgba(255,255,255,0.5) );
     }
-    #content > section > div {
+    #content > .col {
       width: calc(100% / 3 - 10px);
     }
 }
