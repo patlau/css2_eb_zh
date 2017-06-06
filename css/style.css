@@ -2,6 +2,12 @@
 
 @import url("../font-awesome/css/font-awesome.css");
 
+:root {
+    --nav-color: rgba(86,75,71, 0.7);
+    --footer-color: rgba(86,75,71, 0.7);
+    --font-size-factor: 1;
+}
+
 body {
 	background-color: #ccc;
 	font-size: 1em;
@@ -26,6 +32,14 @@ h1, h2, h3, h4 {
 	margin: 0 0 10px;
 }
 
+h1 {
+    font-size: calc( var(--font-size-factor) * 2em);
+}
+
+h3 {
+    font-size: calc(var(--font-size-factor) * 1.17em);
+}
+
 /* ----------header for logo-------------- */
 
 header {
@@ -45,7 +59,7 @@ header img {
 /* -------------- navigavtion------------- */
 
 nav {
-    background: rgba(86,75,71, 0.7);
+    background: var(--nav-color);
 }
 nav ul {
 	list-style-type: none;
@@ -153,7 +167,7 @@ aside {
 
 footer {
 	padding: 20px;
-    background: rgba(86,75,71, 0.8);
+    background: var(--footer-color);
 	color: #fff;
 }
 footer a {
@@ -164,6 +178,9 @@ footer a {
 /* --- media queries --- */
 
 @media screen and (min-width : 601px) {
+    :root {
+        --font-size-factor: 1.2;
+    }
     body {
         background: rgba(240, 248, 255, 1);
     }
@@ -173,9 +190,22 @@ footer a {
     .col {
       width: calc(100% / 2 - 10px);
     }
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        min-width: 10em;
+    }
+    
+    nav ul li:last-child {
+        margin-left: auto;
+    }
 }
 
 @media screen and (min-width : 981px) {
+    :root {
+        --font-size-factor: 1.5;
+    }
     body {
         background: rgba(255, 228 ,196 ,1);
     }
